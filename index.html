@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>WeatherApp</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header blur">
+        <a href="#" class="logo"><img src="img/logo/logo.svg" alt="logo" /></a>
+        <form action="">
+          <input type="text" placeholder="Поиск по городу" type="search" />
+          <button type="submit" class="search">
+            <img src="img/logo/search.svg" alt="search" />
+          </button>
+        </form>
+      </header>
+      <section class="weather">
+        <div class="weather-content">
+          <h1 class="weather-content__location">Location</h1>
+          <h2 class="weather-content__day">Day</h2>
+          <h3 class="weather-content__time">00:00</h3>
+          <h4 class="weather-content__temperature">0°</h4>
+          <div class="weather-content__text-img">
+            <img
+              src="img/icons/weather.svg"
+              alt=""
+              class="weather-content__img"
+            />
+            <h5 class="weather-content__text">Weather Text</h5>
+          </div>
+          <h6 class="weather-content__feel-temp">Feel temp °</h6>
+        </div>
+        <div class="weather-descr">
+          <div class="weather-descr__column">
+            <div class="weather-descr__block">
+              <div class="weather-descr__title">Влажность</div>
+              <img src="img/icons/humidity.svg" alt="humidity" />
+              <div class="weather-descr__subtitle">75 %</div>
+              <div class="weather-descr__progress">0</div>
+              <div class="weather-descr__text">100%</div>
+            </div>
+            <div class="weather-descr__block">
+              <div class="weather-descr__title">Давление</div>
+              <img src="img/icons/barometr.svg" alt="barometr" />
+              <div class="weather-descr__subtitle">761</div>
+              <div class="weather-descr__text">Повышенное</div>
+            </div>
+            <div class="weather-descr__block">
+              <div class="weather-descr__title">Видимость</div>
+              <img src="img/icons/visibility.svg" alt="visibility" />
+              <div class="weather-descr__subtitle">28 км</div>
+              <div class="weather-descr__text">Нормальная</div>
+            </div>
+          </div>
+          <div class="weather-descr__column">
+            <div class="weather-descr__block">
+              <div class="weather-descr__title">Рассвет</div>
+              <img src="img/icons/sunrise.svg" alt="sunrice" />
+              <div class="weather-descr__subtitle">8:42</div>
+              <div class="weather-descr__text">Прошло: 02:47</div>
+            </div>
+
+            <div class="weather-descr__block">
+              <div class="weather-descr__title">Закат</div>
+              <img src="img/icons/sunset.svg" alt="sunset" />
+              <div class="weather-descr__subtitle">16:37</div>
+              <div class="weather-descr__text">Осталось: 05:08</div>
+            </div>
+
+            <div class="weather-descr__block">
+              <div class="weather-descr__title">Сила ветра</div>
+              <img src="img/icons/direction.svg" alt="direction" />
+              <div class="weather-descr__subtitle">2 м/с</div>
+              <div class="weather-descr__text">Северо-западный</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="slider blur">
+        <div class="slider__descr">
+          <h6 class="slider__title">Прогноз:</h6>
+          <p class="slider__subtitle">на 24 часа</p>
+          <p class="slider__subtitle">на 5 дней</p>
+        </div>
+        <div class="slider__blocks">
+          <a href="#" class="left"
+            ><img src="img/icons/chevron.svg" alt="chevron"
+          /></a>
+          <div class="slider__block">
+            <div class="slider__time">15:00</div>
+            <img src="img/icons/weather.svg" alt="" class="slider-img" />
+            <div class="slider__temperature">-7°</div>
+          </div>
+          <div class="slider__block">
+            <div class="slider__time">15:00</div>
+            <img src="img/icons/weather.svg" alt="" class="slider-img" />
+            <div class="slider__temperature">-5°</div>
+          </div>
+          <div class="slider__block">
+            <div class="slider__time">18:00</div>
+            <img src="img/icons/weather.svg" alt="" class="slider-img" />
+            <div class="slider__temperature">-7°</div>
+          </div>
+          <div class="slider__block">
+            <div class="slider__time">21:00</div>
+            <img src="img/icons/weather.svg" alt="" class="slider-img" />
+            <div class="slider__temperature">-9°</div>
+          </div>
+          <div class="slider__block">
+            <div class="slider__time">00:00</div>
+            <img src="img/icons/weather.svg" alt="" class="slider-img" />
+            <div class="slider__temperature">-11°</div>
+          </div>
+          <a href="#" class="right">
+            <img class="img-right" src="img/icons/chevron.svg" alt="chevron"
+          /></a>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

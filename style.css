@@ -1,0 +1,298 @@
+body {
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+    transition: none;
+  }
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", system-ui;
+  font-variant-numeric: lining-nums;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(img/bg/summer-beautiful-clouds-day-bright.jpg);
+}
+
+.container {
+  padding: 0 300px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blur {
+  padding: 64px;
+  background-color: rgba(139, 139, 139, 10%);
+  backdrop-filter: blur(10px);
+}
+
+form {
+  position: relative;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding: 12px 16px;
+  width: 506px;
+  height: 48px;
+  border-radius: 8px;
+  background: rgb(245, 244, 244, 40%);
+}
+
+button {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.weather {
+  padding: 72px 32px 32px 32px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.weather-descr {
+  display: flex;
+  margin-left: 280px;
+  flex-wrap: wrap;
+}
+
+.weather-descr__column {
+  display: flex;
+}
+
+.weather-content {
+  color: #f5f4f4;
+  margin-left: 222px;
+  text-align: center;
+  padding: 8px;
+}
+
+.weather-content__location {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-top: 8px;
+}
+
+.weather-content__day {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 8px;
+}
+
+.weather-content__time {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 8px;
+}
+
+.weather-content__temperature {
+  font-size: 112px;
+  font-weight: 700;
+  line-height: 112px;
+  padding-top: 64px;
+}
+
+.weather-content__text-img {
+  display: flex;
+  padding-top: 64px;
+}
+
+.weather-content__text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.weather-content__img {
+  width: 24px;
+  height: 24px;
+  padding-right: 8px;
+}
+
+.weather-content__feel-temp {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 8px;
+}
+
+.wrapper {
+  width: 506px;
+  height: 408px;
+}
+
+.weather-descr__block {
+  background-color: rgba(245, 244, 244, 40%);
+  width: 158px;
+  height: 196px;
+  padding: 16px;
+  text-align: center;
+  border-radius: 8px;
+  color: #202020;
+  margin: 16px;
+}
+
+.weather-descr__title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-bottom: 16px;
+}
+
+.weather-descr__subtitle {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-top: 16px;
+}
+
+.weather-descr__text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-top: 16px;
+}
+
+.slider__descr {
+  padding-bottom: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.slider__title {
+  color: #f5f4f4;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  padding-right: 32px;
+}
+
+.slider__subtitle {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #f5f4f4;
+  padding-right: 32px;
+}
+.slider__subtitle:hover {
+  text-decoration: underline;
+}
+
+.slider__subtitle:last-child {
+  color: #f5f4f4;
+  text-decoration: none;
+}
+
+.slider__blocks {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.slider__block {
+  margin-right: 16px;
+  padding: 22px 16px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 156px;
+  height: 64px;
+  border-radius: 8px;
+  background-color: rgb(245, 244, 244, 40%);
+}
+
+.slider-img {
+  width: 32px;
+  height: 32px;
+}
+
+.left,
+.right {
+  background-color: rgb(245, 244, 244, 40%);
+  padding: 12px 16px;
+  width: 56px;
+  height: 48px;
+  border-radius: 8px;
+}
+
+.img-right {
+  transform: rotateY(180deg);
+}
