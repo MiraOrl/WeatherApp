@@ -141,7 +141,7 @@ button {
   padding: 8px;
 }
 
-.weather-content__location {
+.city {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;

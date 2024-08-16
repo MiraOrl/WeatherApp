@@ -18,16 +18,16 @@
         <a href="#" class="logo"><img src="img/logo/logo.svg" alt="logo" /></a>
         <form action="">
           <input type="text" placeholder="Поиск по городу" type="search" />
-          <button type="submit" class="search">
+          <button class="search">
             <img src="img/logo/search.svg" alt="search" />
           </button>
         </form>
       </header>
       <section class="weather">
         <div class="weather-content">
-          <h1 class="weather-content__location">Location</h1>
-          <h2 class="weather-content__day">Day</h2>
-          <h3 class="weather-content__time">00:00</h3>
+          <h1 class="city">Moscow</h1>
+          <!-- <h2 class="weather-content__day">Day</h2>
+          <h3 class="weather-content__time">00:00</h3> -->
           <h4 class="weather-content__temperature">0°</h4>
           <div class="weather-content__text-img">
             <img
@@ -45,21 +45,27 @@
               <div class="weather-descr__title">Влажность</div>
               <img src="img/icons/humidity.svg" alt="humidity" />
               <div class="weather-descr__subtitle">75 %</div>
-              <div class="weather-descr__progress">0</div>
-              <div class="weather-descr__text">100%</div>
             </div>
             <div class="weather-descr__block">
               <div class="weather-descr__title">Давление</div>
               <img src="img/icons/barometr.svg" alt="barometr" />
-              <div class="weather-descr__subtitle">761</div>
-              <div class="weather-descr__text">Повышенное</div>
+              <div class="weather-descr__subtitle pressure">761</div>
+              <!-- <div class="weather-descr__text">Повышенное</div> -->
             </div>
             <div class="weather-descr__block">
-              <div class="weather-descr__title">Видимость</div>
-              <img src="img/icons/visibility.svg" alt="visibility" />
-              <div class="weather-descr__subtitle">28 км</div>
-              <div class="weather-descr__text">Нормальная</div>
+              <div class="weather-descr__title">Сила ветра</div>
+              <img src="img/icons/direction.svg" alt="direction" />
+              <div class="weather-descr__subtitle">
+                <div class="wind-speed">2 м/с</div>
+              </div>
+              <!-- <div class="weather-descr__text">Северо-западный</div> -->
             </div>
+          </div>
+          <div class="weather-descr__block">
+            <div class="weather-descr__title">Видимость</div>
+            <img src="img/icons/visibility.svg" alt="visibility" />
+            <div class="weather-descr__subtitle">28 км</div>
+            <div class="weather-descr__text">Нормальная</div>
           </div>
           <div class="weather-descr__column">
             <div class="weather-descr__block">
@@ -74,13 +80,6 @@
               <img src="img/icons/sunset.svg" alt="sunset" />
               <div class="weather-descr__subtitle">16:37</div>
               <div class="weather-descr__text">Осталось: 05:08</div>
-            </div>
-
-            <div class="weather-descr__block">
-              <div class="weather-descr__title">Сила ветра</div>
-              <img src="img/icons/direction.svg" alt="direction" />
-              <div class="weather-descr__subtitle">2 м/с</div>
-              <div class="weather-descr__text">Северо-западный</div>
             </div>
           </div>
         </div>
